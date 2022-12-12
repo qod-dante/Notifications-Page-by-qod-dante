@@ -6,3 +6,18 @@
     text-decoration: none;
     list-style-type: none;
 }
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --veryLightGrayishBlue: hsl(210, 60%, 98%);
+    --lightGreyishBlue1: hsl(211, 68%, 94%);
+    --lightGreyishBlue2: hsl(205, 33%, 90%);
+    --greyishBlue: hsl(219, 14%, 63%);
+    --darkGreyishBlue: hsl(219, 12%, 42%);
+    --veryDarkBlue: hsl(224, 21%, 14%);
+    --paraFontSize: 16px;
+    --fontWeightMedium: 500;
+    --fontWeightExtraBold: 800;
+}
