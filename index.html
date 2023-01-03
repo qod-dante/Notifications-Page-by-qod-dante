@@ -9,7 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Notifications page</title>
 </head>
-<body class="grid">
+<body class="grid bottom-layer">
+<div class="grid top-layer">
   <header class="grid">
     <h1 class="header-and-number">Notifications <span id="notification-counter">3</span></h1>
     <p id="mark-all">Mark all as read</p>
@@ -19,7 +20,7 @@
       <img src="./assets/images/avatar-mark-webber.webp"
            alt="User Avatar"
            class="webber-avatar avatar" />
-      <p class="webber-na notif-activity"><span class="at-username">Mark Webber</span> reacted to your recent post <span class="post-ref">My first tournament today!</span><span class="space"></span> <span class="unread-indicator"></span></p>
+      <p class="webber-na notif-activity"><span class="at-username">Mark Webber</span> reacted to your recent post <span class="post-ref">My first tournament today!</span><span class="space">&nbsp;</span> <span class="unread-indicator"></span></p>
       <p class="webber-tp time-posted">1m ago</p>
     </div>
     <div class="main-child angela unread-msg grid">
@@ -51,7 +52,7 @@
       <p class="smith-na notif-activity"><span class="at-username">Kimberly Smith</span> commented on your picture</p>
       <img src="./assets/images/image-chess.webp"
            alt="Posted image"
-           class="chess-img avatar" />
+           class="chess-img" />
       <p class="smith-tp time-posted">1 week ago</p>
     </div>
     <div class="main-child peterson read-msg grid">
@@ -75,6 +76,7 @@
     </p>
   </footer>
   <noscript>Oops! It seems your browser either doesn't support JavaScript, or it has been disabled. Please check your settings and try again.</noscript>
-  <script src="./scripts/mainScript.js"></script>
+</div>
+<script src="./scripts/mainScript.js"></script>
 </body>
 </html>
