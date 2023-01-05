@@ -34,9 +34,11 @@
 
 /* Desktop layout */
 
-/* .bottom-layer {
-    background-color: var(--lightGreyishBlue1);
-} */
+.bottom-layer {
+    background-color: #f9fafe;
+    z-index: -1;
+    max-width: 1440px;
+}
 
 .top-layer {
     grid-template-areas:
@@ -45,7 +47,17 @@
     'attribution attribution';
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 6fr;
-    max-width: 732px;
+    max-width: 659px;
+    background-color: var(--lightGreyishBlue1);
+    z-index: 1;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 660px) {
+    .top-layer {
+        margin: 5% auto;
+    }
 }
 
 header {
@@ -133,7 +145,6 @@ main {
     height: 8px;
     width: 8px;
     display: inline-block;
-    margin-left: 20px;
 }
 
 .time-posted {
@@ -265,7 +276,8 @@ main {
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas:
     'smith-avatar smith-na chess-img'
-    'smith-avatar smith-tp .';
+    'smith-avatar smith-tp chess-img'
+    '. smith-tp .'
 }
 
 .peterson-avatar {
@@ -311,20 +323,6 @@ main {
 .attribution {
     grid-area: attribution;
     font-size: 12px;
+    margin-top: 2rem;
 }
 
-/* @media screen and (max-width: 600px) {
-    body {
-        padding: 1rem;
-    }
-} */
-
-@media screen and (min-width: 474px) {
-    .smith {
-        grid-auto-flow: row dense;
-        grid-template-areas:
-        'smith-avatar smith-na chess-img'
-        '. . .'
-        'smith-avatar smith-tp .'
-    }
-}
