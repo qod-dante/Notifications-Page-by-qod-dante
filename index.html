@@ -6,21 +6,21 @@
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans"> -->
   <link rel="stylesheet" href="./styles/main.css" type="text/css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Notifications page</title>
 </head>
 <body class="grid bottom-layer">
 <div class="grid top-layer">
   <header class="grid">
     <h1 class="header-and-number">Notifications <span id="notification-counter">3</span></h1>
-    <p id="mark-all">Mark all as read</p>
+    <p id="mark-all" onclick="markAsRead()">Mark all as read</p>
   </header>
   <main class="grid">
     <div class="main-child webber unread-msg grid">
       <img src="./assets/images/avatar-mark-webber.webp"
            alt="User Avatar"
            class="webber-avatar avatar" />
-      <p class="webber-na notif-activity"><span class="at-username">Mark Webber</span> reacted to your recent post <span class="post-ref">My first tournament today!</span><span class="space">&nbsp;</span> <span class="unread-indicator"></span></p>
+      <p class="webber-na notif-activity"><span class="at-username">Mark Webber</span> reacted to your recent post <span class="post-ref">My first tournament today!</span><span class="space"></span> <span class="unread-indicator"></span></p>
       <p class="webber-tp time-posted">1m ago</p>
     </div>
     <div class="main-child angela unread-msg grid">

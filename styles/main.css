@@ -32,10 +32,10 @@
     text-align: center;
 }
 
-/* Desktop layout */
+/* Body Layers */
 
 .bottom-layer {
-    background-color: #f9fafe;
+    background-color: var(--veryLightGrayishBlue);
     z-index: -1;
     max-width: 1440px;
 }
@@ -59,6 +59,8 @@
         margin: 5% auto;
     }
 }
+
+/* Body Starts Here0 */
 
 header {
     grid-area: header;
@@ -93,6 +95,11 @@ header {
     font-size: var(--paraFontSize);
     align-self: end;
     color: var(--greyishBlue);
+}
+
+#mark-all:hover {
+    cursor: pointer;
+    color: var(--blue);
 }
 
 main {
@@ -134,8 +141,18 @@ main {
     color: var(--veryDarkBlue);
 }
 
+.at-username:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
 .post-ref {
     font-weight: var(--fontWeightExtraBold);
+}
+
+.post-ref:hover {
+    color: var(--blue);
+    cursor: pointer;
 }
 
 .unread-indicator {
@@ -145,6 +162,7 @@ main {
     height: 8px;
     width: 8px;
     display: inline-block;
+    margin-left: 2px;
 }
 
 .time-posted {
@@ -216,8 +234,13 @@ main {
 }
 
 .group-name {
-    color: var(--blue);
+    color: var(--darkGreyishBlue);
     font-weight: var(--fontWeightExtraBold);
+}
+
+.group-name:hover {
+    color: var(--blue);
+    cursor: pointer;
 }
 
 .thompson {
@@ -242,6 +265,10 @@ main {
 
 .hasanuddin-prvtmsg {
     grid-area: hasanuddin-prvtmsg;
+}
+
+.hasanuddin-prvtmsg:hover {
+    background-color: var(--lightGreyishBlue1);
 }
 
 .hasanuddin {
