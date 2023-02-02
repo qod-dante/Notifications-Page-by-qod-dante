@@ -31,7 +31,7 @@ Users should be able to:
 
 #### Desktop 1440px (Challenge width)
 
-![Desktop Version 1440px](./screenshots/1440px-Frontend-Mentor-Notifications-page.png)
+![Desktop Version 1440px](./screenshots/1440px-Frontend Mentor-Notifications-page.png)
 
 #### Desktop 1366px (My Desktop's Width)
 
